@@ -379,13 +379,29 @@ sup { font-size: 0.65em; vertical-align: super; }
 .hero {
   min-height: 100vh;
   padding-top: var(--nav-h);
-  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 40%, #1a56db 70%, #0ea5e9 100%);
+  
+  background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("assets/school.jpg");
+
+  background-size: cover;
+  background-position: center;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  overflow: hidden;
-  padding-bottom: 60px;
+  text-align: center;
+  color: white;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
 }
 
 .hero-bg-shapes { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }

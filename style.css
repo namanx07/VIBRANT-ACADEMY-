@@ -1638,3 +1638,9 @@ sup { font-size: 0.65em; vertical-align: super; }
     grid-template-columns: 1fr 1fr;
   }
 }
+.topper-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}

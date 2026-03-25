@@ -1616,3 +1616,25 @@ sup { font-size: 0.65em; vertical-align: super; }
   .logo-name { font-size: 0.92rem; }
   .directors-grid { grid-template-columns: 1fr 1fr; }
 }
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: 0.4s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
